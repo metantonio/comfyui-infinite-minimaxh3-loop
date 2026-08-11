@@ -2,6 +2,8 @@
 ComfyUI MiniMax Hailuo H3 Custom Loop Controller
 ========================================================================
 
+Tested & compatible with ComfyUI v0.31.0.
+
 For complete documentation, visual diagrams, and detailed argument reference, 
 see README.md in this directory.
 
@@ -46,19 +48,16 @@ The character suddenly hears a deep rumble and turns toward the source of the so
 ------------------------------------------------------------------------
 
 # Basic run (all prompts):
-python loop_v14.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\initial.jpg
+python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\initial.jpg
 
 # Run specific number of loops (e.g. 8 loops):
-python loop_v14.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\initial.jpg --loops 8
+python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\initial.jpg --loops 8
 
 # Run with custom video dimensions and duration:
-python loop_v14.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\initial.jpg --loops 8 --width 864 --height 480 --duration 5
+python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\initial.jpg --loops 8 --width 864 --height 480 --duration 5
 
 # Resume from loop 4 using saved last frame of loop 3:
-python .\loop_v14.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\h3_loop_output\loop_0003_last.png --start-loop 4 --pause 30
-
-# Test run alternative prompt file:
-python loop_v14.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts2.txt --image .\initial2.jpg --width 864 --height 480 --duration 5
+python .\loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\h3_loop_output\loop_0003_last.png --start-loop 4 --pause 30
 
 # Workflow structural check (dry run):
-python loop_v14.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\initial.jpg --check
+python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\initial.jpg --check

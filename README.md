@@ -1,10 +1,13 @@
 # ComfyUI MiniMax Hailuo H3 Custom Loop Controller
 
-[![ComfyUI](https://img.shields.io/badge/ComfyUI-Supported-blue.svg)](https://github.com/comfyanonymous/ComfyUI)
+[![ComfyUI v0.31.0](https://img.shields.io/badge/ComfyUI-v0.31.0-blue.svg)](https://github.com/comfyanonymous/ComfyUI)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-brightgreen.svg)](https://www.python.org/)
 [![Model](https://img.shields.io/badge/Model-MiniMax_Hailuo_H3-purple.svg)](https://hailuoai.video/)
 
-An automated continuous video generation pipeline for **ComfyUI** using the **MiniMax Hailuo H3 (Image-to-Video)** model. This tool enables seamless multi-scene narrative generation by automatically using the **last frame of the previous generated video** as the **first frame (starting image) for the next scene**.
+An automated continuous video generation pipeline for **ComfyUI (v0.31.0)** using the **MiniMax Hailuo H3 (Image-to-Video)** model. This tool enables seamless multi-scene narrative generation by automatically using the **last frame of the previous generated video** as the **first frame (starting image) for the next scene**.
+
+> [!NOTE]
+> **Compatibility**: Designed and verified specifically for **ComfyUI v0.31.0**.
 
 ---
 
@@ -32,7 +35,10 @@ workflow_minimax_con_custom_loop/
 
 ---
 
-## ⚙️ Installation & Setup
+## ⚙️ Installation & Requirements
+
+> [!IMPORTANT]
+> Requires **ComfyUI v0.31.0** or compatible version.
 
 ### 1. Install the `LoopLastFrame` Custom Node
 Copy `__init__.py` from this repository into your ComfyUI `custom_nodes` directory:
@@ -54,7 +60,7 @@ pip install requests
 ```
 
 ### 3. Launch ComfyUI
-Start ComfyUI with the API server enabled (default port `8188`):
+Start ComfyUI (v0.31.0) with the API server enabled (default port `8188`):
 
 ```bash
 python main.py --listen 127.0.0.1 --port 8188
