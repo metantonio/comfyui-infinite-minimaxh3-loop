@@ -2994,3 +2994,145 @@ ALL LOOPS COMPLETED
 ======================================================================
 Output directory: C:\Users\anton\Downloads\workflow_minimax_con_custom_loop\h3_loop_output
 2026-08-11 17:12:16 | ALL LOOPS COMPLETED SUCCESSFULLY
+
+================================================================================
+LOG FILE: C:\Users\anton\Downloads\workflow_minimax_con_custom_loop\loop.log
+2026-08-11 19:20:43 | LOGGING INITIALIZED
+START TIME: 2026-08-11 19:20:43
+================================================================================
+usage: loop.py [-h] --workflow WORKFLOW --prompt PROMPT --image IMAGE [--base-url BASE_URL] [--loops LOOPS]
+               [--start-loop START_LOOP] [--width WIDTH] [--height HEIGHT] [--duration DURATION] [--outdir OUTDIR]
+               [--pause PAUSE] [--cleanup] [--check]
+loop.py: error: the following arguments are required: --workflow, --prompt, --image
+
+================================================================================
+LOG FILE: C:\Users\anton\Downloads\workflow_minimax_con_custom_loop\loop.log
+2026-08-11 19:22:47 | LOGGING INITIALIZED
+START TIME: 2026-08-11 19:22:47
+================================================================================
+======================================================================
+2026-08-11 19:22:47 | RUN FINISHED SUCCESSFULLY
+MiniMax H3 API Workflow Check
+======================================================================
+OK  node 15: 'MiniMaxH3ImageToVideo' (expected 'MiniMaxH3ImageToVideo')
+OK  node 53: 'LoadImage' (expected 'LoadImage')
+OK  node 56: 'PreviewImage' (expected 'PreviewImage')
+OK  node 57: 'ImageResizeKJv2' (expected 'ImageResizeKJv2')
+OK  node 85: 'SaveVideo' (expected 'SaveVideo')
+
+Prompt input:        node 15 / inputs.prompt
+First-frame source:  ['57', 0]
+Last-frame source:   ['92', 0]
+Node 53 image:       16411743862036d3rks5p4rctuupntpxzidysrzn6r5wtfrqgs56dpbxsjplpilfoh6n2tduxmt89tgctqo2rdrkufuh0v19uarxsonji6es7g3hcu.jpg
+Preview output:      node 56 <- generated frames node 35
+Width:               node 69 -> None
+Height:              node 70 -> None
+Duration:            node 18 -> Nones
+======================================================================
+
+Prompts available: 10
+Starting at loop: 4
+Executing loops: 4-10
+Initial image for starting loop: h3_loop_output\loop_0003_last.png
+
+VIDEO CONFIGURATION
+  Width:     864
+  Height:    480
+  Duration:  Nones
+
+Width: overridden from CLI.
+Height: overridden from CLI.
+Duration: using workflow default.
+
+[BEFORE START] RAM 16.2/31.2 GB (52%) | VRAM 0.16/11.99 GB | GPU TEMP 57 C
+2026-08-11 19:22:50 | RUN INITIALIZED
+
+======================================================================
+LOOP 4/10
+2026-08-11 19:22:50 | LOOP 4 START
+2026-08-11 19:22:50 | PROMPT LENGTH: 566 characters
+======================================================================
+Continue directly from the exact final frame of the previous loop.
+
+The camera is now focused on Zelda in a close-up.
+
+Zelda looks embarrassed but curious and says:
+
+"Because of you? I thought you were the one avoiding me."
+
+The camera stays close to Zelda while she speaks.
+
+Link reacts subtly in the background, looking surprised.
+
+After Zelda finishes speaking, the camera slowly shifts focus toward Link.
+
+End with Link looking at Zelda with a nervous but sincere expression.
+
+Audio: quiet ambience, Zelda's voice close and clear, subtle emotional musical swell.
+
+Uploading first frame to ComfyUI...
+2026-08-11 19:22:50 | RANDOM SEED: 254132555625550 | RandomNoise node: 20
+2026-08-11 19:22:50 | VIDEO PARAMETERS | resolution=864x480 | duration=Nones
+Node 53 image: h3_loop_0004_first.png
+Final-frame capture: PreviewImage 56 <- VAEDecode 35
+Video resolution: 864x480
+Video duration: Nones
+Temporal mode: no fixed last_frame; supplied/current image is first_frame only.
+Submitting workflow to ComfyUI...
+2026-08-11 19:22:50 | LOOP 4 SUBMITTED TO COMFYUI
+Prompt ID: e8b713d4-56c0-4074-a582-7c8d6853fe15
+Waiting for ComfyUI...
+2026-08-11 19:22:50 | LOOP 4 MONITOR STARTED | interval=5s
+2026-08-11 19:22:57 | LOOP 4 MONITOR | RAM 22.6/31.2 GB (72%) | CPU 66% | GPU 51% | VRAM 10.74/11.99 GB | GPU TEMP 70 C | GPU POWER 83.1 W | GPU CLOCK 2430 MHz
+2026-08-11 19:23:05 | LOOP 4 MONITOR | RAM 27.4/31.2 GB (88%) | CPU 60% | GPU 100% | VRAM 8.26/11.99 GB | GPU TEMP 84 C | GPU POWER 157.2 W | GPU CLOCK 2205 MHz
+2026-08-11 19:23:13 | LOOP 4 MONITOR | RAM 28.7/31.2 GB (92%) | CPU 59% | GPU 100% | VRAM 9.96/11.99 GB | GPU TEMP 87 C | GPU POWER 169.5 W | GPU CLOCK 2220 MHz
+2026-08-11 19:23:20 | LOOP 4 MONITOR | RAM 30.3/31.2 GB (97%) | CPU 5% | GPU 100% | VRAM 9.71/11.99 GB | GPU TEMP 88 C | GPU POWER 145.1 W | GPU CLOCK 2040 MHz
+2026-08-11 19:23:27 | LOOP 4 MONITOR | RAM 30.7/31.2 GB (98%) | CPU 7% | GPU 100% | VRAM 9.68/11.99 GB | GPU TEMP 87 C | GPU POWER 140.1 W | GPU CLOCK 1950 MHz
+2026-08-11 19:23:34 | LOOP 4 MONITOR | RAM 30.7/31.2 GB (99%) | CPU 3% | GPU 100% | VRAM 9.59/11.99 GB | GPU TEMP 87 C | GPU POWER 133.6 W | GPU CLOCK 1905 MHz
+2026-08-11 19:23:41 | LOOP 4 MONITOR | RAM 30.7/31.2 GB (99%) | CPU 4% | GPU 100% | VRAM 9.59/11.99 GB | GPU TEMP 87 C | GPU POWER 117.4 W | GPU CLOCK 1770 MHz
+2026-08-11 19:23:49 | LOOP 4 MONITOR | RAM 27.7/31.2 GB (89%) | CPU 14% | GPU 73% | VRAM 9.95/11.99 GB | GPU TEMP 86 C | GPU POWER 115.9 W | GPU CLOCK 2145 MHz
+2026-08-11 19:23:56 | LOOP 4 MONITOR | RAM 27.6/31.2 GB (89%) | CPU 9% | GPU 100% | VRAM 9.95/11.99 GB | GPU TEMP 87 C | GPU POWER 120.7 W | GPU CLOCK 1785 MHz
+2026-08-11 19:24:04 | LOOP 4 MONITOR | RAM 28.3/31.2 GB (91%) | CPU 18% | GPU 100% | VRAM 9.99/11.99 GB | GPU TEMP 75 C | GPU POWER 21.1 W | GPU CLOCK 330 MHz
+2026-08-11 19:24:12 | LOOP 4 MONITOR | RAM 27.9/31.2 GB (89%) | CPU 48% | GPU 0% | VRAM 9.81/11.99 GB | GPU TEMP 72 C | GPU POWER 10.3 W | GPU CLOCK 210 MHz
+2026-08-11 19:24:12 | LOOP 4 MONITOR STOPPED
+ComfyUI job completed.
+2026-08-11 19:24:12 | LOOP 4 VIDEO COMPLETED
+2026-08-11 19:24:12 | VIDEO GENERATED IN 82.4 SECONDS
+Last frame saved immediately: h3_loop_output\loop_0004_last.png
+2026-08-11 19:24:12 | LAST FRAME SAVED: h3_loop_output\loop_0004_last.png
+2026-08-11 19:24:12 | LOOP 4 COMPLETE
+[AFTER LOOP 4] RAM 27.8/31.2 GB (89%) | VRAM 9.81/11.99 GB | GPU TEMP 71 C
+
+======================================================================
+POST-GENERATION CLEANUP / COOLING
+======================================================================
+2026-08-11 19:24:14 | POST-GENERATION CLEANUP START
+[1/5] Requesting ComfyUI /free...
+2026-08-11 19:24:14 | REQUESTING COMFYUI /free
+2026-08-11 19:24:14 | COMFYUI /free SUCCESS
+[CLEANUP] ComfyUI released cached models/memory.
+[2/5] Running Python garbage collection...
+[CLEANUP] Python GC released 0 objects.
+[CLEANUP] Local torch CUDA cleanup not available: No module named 'torch'
+[AFTER /free + GC] RAM 22.8/31.2 GB (73%) | VRAM 0.28/11.99 GB | GPU TEMP 71 C
+[3/5] Waiting for VRAM threshold...
+
+[WAIT VRAM] Waiting for VRAM < 1.00 GB...
+2026-08-11 19:24:16 | WAITING FOR VRAM < 1.00 GB
+2026-08-11 19:24:18 | VRAM BELOW LIMIT | 0.28 GB
+[WAIT VRAM] OK: 0.28 GB < 1.00 GB
+[4/5] Waiting for RAM threshold...
+
+[WAIT RAM] Waiting for RAM < 16.0 GB...
+2026-08-11 19:24:18 | WAITING FOR RAM < 16.0 GB
+2026-08-11 19:24:20 | RAM BELOW LIMIT | 16.0 GB
+[WAIT RAM] OK: 16.0 GB < 16.0 GB
+[5/5] Memory thresholds reached.
+
+[COOLDOWN] Memory thresholds reached.
+[COOLDOWN] Waiting additional 30 seconds...
+2026-08-11 19:24:20 | ADDITIONAL COOLDOWN START | 30s
+2026-08-11 19:24:22 | COOLDOWN 30s | RAM 16.0 GB | VRAM 0.28 GB | GPU 70 C
+[COOLDOWN] 30s | RAM 16.0 GB | VRAM 0.28 GB | GPU 70 C     2026-08-11 19:24:29 | COOLDOWN 25s | RAM 16.1 GB | VRAM 0.28 GB | GPU 69 C
+[COOLDOWN] 25s | RAM 16.1 GB | VRAM 0.28 GB | GPU 69 C     2026-08-11 19:24:36 | COOLDOWN 20s | RAM 16.0 GB | VRAM 0.28 GB | GPU 68 C
+[COOLDOWN] 20s | RAM 16.0 GB | VRAM 0.28 GB | GPU 68 C     

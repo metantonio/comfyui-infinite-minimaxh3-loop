@@ -93,53 +93,43 @@ Medium close-up on Zelda and Link inside the ancient temple, keeping both charac
 Wide cinematic shot of Link and Zelda running through an ancient forest at night, maintaining previous character appearance. Link runs slightly ahead while Zelda follows closely behind. Zelda looks back in fear and says: "Link, they're coming!"
 ```
 
-When executed, `loop_v14.py` merges `GLOBAL` + `Scene Prompt` for each iteration.
+When executed, `loop.py` merges `GLOBAL` + `Scene Prompt` for each iteration.
 
 ---
 
-## 🚀 Usage Guide
+## 🚀 Usage Guide (Windows)
 
-### Basic Command
+> [!NOTE]
+> **Windows Commands**: All command examples below are structured for **Windows** (PowerShell or Command Prompt / `cmd.exe`).
+> 
+> **Resolution Requirement**: If specifying custom `--width` and `--height`, dimensions **must be multiples of 32** (e.g. `864x480`, `1280x720`, `768x512`).
+
+### Basic Command (PowerShell / Command Prompt)
 Run the automation loop starting with an initial seed image (`initial.jpg`):
 
-```bash
-python loop.py \
-  --workflow MiniMax_H3_Loop_API.json \
-  --prompt prompts.txt \
-  --image initial.jpg
+```powershell
+python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\initial.jpg
 ```
 
 ### Specifying Loop Count & Video Parameters
-Override video resolution (`864x480`), clip duration (`5s`), and limit the execution to 8 loops:
+Override video resolution (`864x480` - multiple of 32), clip duration (`5s`), and limit the execution to 8 loops:
 
-```bash
-python loop.py \
-  --workflow MiniMax_H3_Loop_API.json \
-  --prompt prompts.txt \
-  --image initial.jpg \
-  --loops 8 \
-  --width 864 \
-  --height 480 \
-  --duration 5
+```powershell
+python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\initial.jpg --loops 8 --width 864 --height 480 --duration 5
 ```
 
 ### Resuming from an Intermediate Loop
 If generation was stopped or you want to branch from loop 4, pass the last saved frame of loop 3 (`loop_0003_last.png`) and set `--start-loop 4`:
 
-```bash
-python loop.py \
-  --workflow MiniMax_H3_Loop_API.json \
-  --prompt prompts.txt \
-  --image h3_loop_output/loop_0003_last.png \
-  --start-loop 4 \
-  --pause 30
+```powershell
+python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\h3_loop_output\loop_0003_last.png --start-loop 4 --pause 30
 ```
 
 ### Dry-Run Workflow Verification
 Verify that the workflow JSON contains all required node mappings without initiating video generation:
 
-```bash
-python loop.py --workflow MiniMax_H3_Loop_API.json --prompt prompts.txt --image initial.jpg --check
+```powershell
+python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\initial.jpg --check
 ```
 
 ---
@@ -154,8 +144,8 @@ python loop.py --workflow MiniMax_H3_Loop_API.json --prompt prompts.txt --image 
 | `--base-url` | `str` | `http://127.0.0.1:8188` | Base URL of the running ComfyUI API server. |
 | `--loops` | `int` | `0` | Number of loops to process (`0` processes all remaining prompts). |
 | `--start-loop` | `int` | `1` | 1-based prompt index to start from. |
-| `--width` | `int` | `None` | Override output video width in pixels (must be divisible by 32). |
-| `--height` | `int` | `None` | Override output video height in pixels (must be divisible by 32). |
+| `--width` | `int` | `None` | Override output video width in pixels (**must be a multiple of 32**, e.g., 864). |
+| `--height` | `int` | `None` | Override output video height in pixels (**must be a multiple of 32**, e.g., 480). |
 | `--duration` | `float` | `None` | Override video duration in seconds. |
 | `--outdir` | `str` | `h3_loop_output` | Output directory path for frame images and logs. |
 | `--pause` | `int` | `30` | Cooldown period (in seconds) between loops after VRAM/RAM cleanup. |

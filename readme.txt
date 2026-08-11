@@ -2,10 +2,11 @@
 ComfyUI MiniMax Hailuo H3 Custom Loop Controller
 ========================================================================
 
-Tested & compatible with ComfyUI v0.31.0.
+- Tested & compatible with ComfyUI v0.31.0.
+- All commands are formatted for Windows (PowerShell / Command Prompt).
+- Recommended: Output resolution (--width / --height) must be a multiple of 32 (e.g., 864x480).
 
-For complete documentation, visual diagrams, and detailed argument reference, 
-see README.md in this directory.
+For full documentation and visual architecture diagrams, see README.md.
 
 ------------------------------------------------------------------------
 1. CUSTOM NODE INSTALLATION
@@ -44,7 +45,7 @@ The character suddenly hears a deep rumble and turns toward the source of the so
 
 
 ------------------------------------------------------------------------
-3. COMMON COMMAND EXAMPLES
+3. COMMON COMMAND EXAMPLES (WINDOWS)
 ------------------------------------------------------------------------
 
 # Basic run (all prompts):
@@ -53,11 +54,11 @@ python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --im
 # Run specific number of loops (e.g. 8 loops):
 python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\initial.jpg --loops 8
 
-# Run with custom video dimensions and duration:
+# Run with custom video dimensions (multiples of 32) and duration:
 python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\initial.jpg --loops 8 --width 864 --height 480 --duration 5
 
 # Resume from loop 4 using saved last frame of loop 3:
-python .\loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\h3_loop_output\loop_0003_last.png --start-loop 4 --pause 30
+python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\h3_loop_output\loop_0003_last.png --start-loop 4 --pause 30
 
 # Workflow structural check (dry run):
 python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\initial.jpg --check
