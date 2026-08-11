@@ -1,0 +1,390 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_pruned_w4a8_mixed.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "13": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_int8_convrot.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "14": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "15": {
+    "inputs": {
+      "prompt": "Close-up on Link, exactly as in the opening frame, wearing his classic green tunic, brown leather belt, boots and carrying the Master Sword on his hand, walking to inside an ancient cross stone way illuminated by soft sun light. Link slowly walks toward Zelda, who is standing beside they way. She looks at him with concern and says in a calm but urgent voice:\n\n\"Link... you finally came.\"\n\nA deep rumble suddenly shakes the temple, dust falls from the ceiling, and the blue light around them begins to fade.\n\nAudio: mysterious ambient sound, low distant rumble, soft magical chimes, Zelda's voice close and clear in front of the mix, subtle stone debris falling in the background.",
+      "width": [
+        "59",
+        0
+      ],
+      "height": [
+        "59",
+        1
+      ],
+      "length": [
+        "19",
+        1
+      ],
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "13",
+        0
+      ],
+      "first_frame": [
+        "57",
+        0
+      ],
+      "last_frame": [
+        "92",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3ImageToVideo",
+    "_meta": {
+      "title": "MiniMax H3 Image to Video"
+    }
+  },
+  "18": {
+    "inputs": {
+      "Number": "10"
+    },
+    "class_type": "Float",
+    "_meta": {
+      "title": "Second"
+    }
+  },
+  "19": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "18",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "20": {
+    "inputs": {
+      "noise_seed": 28341330636170
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "21": {
+    "inputs": {
+      "model": [
+        "45",
+        0
+      ],
+      "conditioning": [
+        "15",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "22": {
+    "inputs": {
+      "sampler_name": "res_multistep"
+    },
+    "class_type": "KSamplerSelect",
+    "_meta": {
+      "title": "KSamplerSelect"
+    }
+  },
+  "23": {
+    "inputs": {
+      "scheduler": "simple",
+      "steps": 6,
+      "denoise": 1,
+      "model": [
+        "45",
+        0
+      ]
+    },
+    "class_type": "BasicScheduler",
+    "_meta": {
+      "title": "BasicScheduler"
+    }
+  },
+  "24": {
+    "inputs": {
+      "noise": [
+        "20",
+        0
+      ],
+      "guider": [
+        "21",
+        0
+      ],
+      "sampler": [
+        "91",
+        0
+      ],
+      "sigmas": [
+        "23",
+        0
+      ],
+      "latent_image": [
+        "15",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "35": {
+    "inputs": {
+      "samples": [
+        "24",
+        0
+      ],
+      "vae": [
+        "13",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "36": {
+    "inputs": {
+      "samples": [
+        "24",
+        0
+      ],
+      "vae": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "VAEDecodeAudio",
+    "_meta": {
+      "title": "VAE Decode Audio"
+    }
+  },
+  "37": {
+    "inputs": {
+      "fps": 24,
+      "bit_depth": 8,
+      "images": [
+        "35",
+        0
+      ],
+      "audio": [
+        "36",
+        0
+      ]
+    },
+    "class_type": "CreateVideo",
+    "_meta": {
+      "title": "Create Video"
+    }
+  },
+  "45": {
+    "inputs": {
+      "sage_attention": "auto",
+      "allow_compile": false,
+      "model": [
+        "90",
+        0
+      ]
+    },
+    "class_type": "PathchSageAttentionKJ",
+    "_meta": {
+      "title": "Patch Sage Attention KJ"
+    }
+  },
+  "53": {
+    "inputs": {
+      "image": "16411743862036d3rks5p4rctuupntpxzidysrzn6r5wtfrqgs56dpbxsjplpilfoh6n2tduxmt89tgctqo2rdrkufuh0v19uarxsonji6es7g3hcu.jpg"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "56": {
+    "inputs": {
+      "images": [
+        "57",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "57": {
+    "inputs": {
+      "width": [
+        "69",
+        0
+      ],
+      "height": [
+        "70",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "keep_proportion": "resize",
+      "pad_color": "0, 0, 0",
+      "crop_position": "center",
+      "divisible_by": 32,
+      "device": "cpu",
+      "image": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "ImageResizeKJv2",
+    "_meta": {
+      "title": "Resize Image v2"
+    }
+  },
+  "59": {
+    "inputs": {
+      "image": [
+        "57",
+        0
+      ]
+    },
+    "class_type": "GetImageSize",
+    "_meta": {
+      "title": "Get Image Size"
+    }
+  },
+  "69": {
+    "inputs": {
+      "value": 800
+    },
+    "class_type": "PrimitiveInt",
+    "_meta": {
+      "title": "Width"
+    }
+  },
+  "70": {
+    "inputs": {
+      "value": 800
+    },
+    "class_type": "PrimitiveInt",
+    "_meta": {
+      "title": "Height"
+    }
+  },
+  "85": {
+    "inputs": {
+      "filename_prefix": " video/MiniMax_H3",
+      "format": "auto",
+      "codec": "auto",
+      "video": [
+        "37",
+        0
+      ]
+    },
+    "class_type": "SaveVideo",
+    "_meta": {
+      "title": "Save Video"
+    }
+  },
+  "90": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_lightx2v_turbo_4step_v0.1_comfy.safetensors",
+      "strength": 1,
+      "low_vram": true,
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3TurboLoRA",
+    "_meta": {
+      "title": "MiniMax-H3 Turbo LoRA"
+    }
+  },
+  "91": {
+    "inputs": {},
+    "class_type": "MiniMaxH3TurboSampler",
+    "_meta": {
+      "title": "MiniMax-H3 Turbo Sampler (4-step)"
+    }
+  },
+  "92": {
+    "inputs": {
+      "width": [
+        "69",
+        0
+      ],
+      "height": [
+        "70",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "keep_proportion": "resize",
+      "pad_color": "0, 0, 0",
+      "crop_position": "center",
+      "divisible_by": 32,
+      "device": "cpu",
+      "image": [
+        "93",
+        0
+      ]
+    },
+    "class_type": "ImageResizeKJv2",
+    "_meta": {
+      "title": "Resize Image v2"
+    }
+  },
+  "93": {
+    "inputs": {
+      "image": "zelda___by_0assult0_dgtv8xs-fullview.jpg"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  }
+}

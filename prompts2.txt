@@ -1,0 +1,227 @@
+GLOBAL:
+Same character identity, same face, same hair, same clothing, same body proportions, same environment geometry, and same semi-realistic visual style throughout the entire sequence. Do not redesign, reinterpret, age, beautify, or alter the characters.
+
+Zelda: young woman with delicate elven facial features, fair skin, long blonde hair, blue eyes, fine facial features, wearing the exact same white clothing as shown in the opening frame.
+
+Link: young man with defined masculine facial features, fair skin, blonde hair, blue eyes, wearing the exact same green outfit as shown in the opening frame.
+
+Preserve the exact appearance of both characters from the opening frame. Do not change their faces, hairstyles, eye colors, clothing, proportions, or visual style. Maintain the same semi-realistic cinematic fantasy aesthetic throughout every loop.
+
+Each LOOP represents one continuous 5–10 second video segment. The final frame of each loop becomes the first frame of the following loop, so every scene must begin naturally from the previous scene's final pose, camera position, character positions, facial expressions, and environment.
+
+CAMERA RULES:
+Use cinematic, controlled camera movement and keep the camera physically close to the characters whenever they are speaking.
+
+When Zelda speaks alone, smoothly frame Zelda in a close-up or tight medium shot, keeping her face clearly visible and sharply focused.
+
+When Link speaks alone, smoothly shift the camera to Link in a close-up or tight medium shot, keeping his face clearly visible and sharply focused.
+
+When both characters interact or speak together, use a two-shot or medium two-shot that clearly includes both characters.
+
+Use smooth motivated camera movements and subtle rack focus between characters. Do not make abrupt or random cuts.
+
+Prioritize facial expressions, eye contact, subtle reactions, and body language. The camera should follow the emotional focus of the conversation.
+
+Keep camera movement physically plausible and continuous between loops. Avoid sudden changes in camera position, lens perspective, character positions, or environment geometry.
+
+Zelda and Link stand together in the exact environment shown in the opening frame. They have been asked to pose together so an artist can paint a portrait of them.
+
+Begin with a medium two-shot matching the opening frame. Both characters stand naturally beside each other, slightly formal and uncertain about how they should pose.
+
+The camera slowly moves closer to them while they try to remain still for the portrait. Zelda briefly looks toward Link, then quickly looks away, slightly embarrassed.
+
+Link notices her reaction and gives a subtle nervous smile.
+
+The camera gently pushes in toward their faces, capturing their awkward but affectionate expressions.
+
+End the shot with Zelda and Link still standing beside each other, looking slightly embarrassed, in a natural pose that can continue directly into the next scene.
+
+Audio: soft ambient environment, subtle romantic cinematic atmosphere, quiet fabric movement, natural room ambience, no music overpowering the characters.
+
+---LOOP---
+
+Continue directly from the exact final frame of the previous loop.
+
+Maintain the same character positions, clothing, facial identity, environment, lighting, and semi-realistic style.
+
+The camera remains close to Zelda and Link.
+
+Zelda glances toward Link again. She is visibly blushing and slightly nervous.
+
+The camera smoothly moves into a close-up of Zelda as she speaks quietly:
+
+"Do you think they noticed how nervous we are?"
+
+After Zelda finishes speaking, the camera slowly begins shifting its attention toward Link.
+
+Link looks at her with a nervous expression, preparing to answer.
+
+End with Link looking directly at Zelda, ready to speak.
+
+Audio: quiet romantic ambience, Zelda's voice clear and intimate, subtle environmental sounds.
+
+---LOOP---
+
+Continue directly from the exact final frame of the previous loop.
+
+The camera completes its smooth movement toward Link and frames him in a close-up.
+
+Link smiles nervously and answers:
+
+"I thought you were nervous because of me."
+
+The camera remains close to Link for his line, emphasizing his embarrassed expression.
+
+Zelda reacts in the background. She looks surprised and slightly confused.
+
+The camera then performs a subtle rack focus from Link to Zelda.
+
+End with Zelda looking directly at Link, clearly wanting an explanation.
+
+Audio: soft ambient sound, intimate dialogue, subtle romantic musical undertone.
+
+---LOOP---
+
+Continue directly from the exact final frame of the previous loop.
+
+The camera is now focused on Zelda in a close-up.
+
+Zelda looks embarrassed but curious and says:
+
+"Because of you? I thought you were the one avoiding me."
+
+The camera stays close to Zelda while she speaks.
+
+Link reacts subtly in the background, looking surprised.
+
+After Zelda finishes speaking, the camera slowly shifts focus toward Link.
+
+End with Link looking at Zelda with a nervous but sincere expression.
+
+Audio: quiet ambience, Zelda's voice close and clear, subtle emotional musical swell.
+
+---LOOP---
+
+Continue directly from the exact final frame of the previous loop.
+
+The camera smoothly moves into a close-up of Link.
+
+Link gives a small nervous smile and says:
+
+"No... I was trying not to make it obvious that I wanted to ask you something."
+
+The camera remains focused on Link's face throughout the line.
+
+Zelda watches him from the edge of the frame.
+
+After he finishes speaking, the camera subtly shifts toward Zelda.
+
+End with Zelda looking at Link with curiosity.
+
+Audio: soft romantic ambience, Link's voice clear and intimate, subtle background environment.
+
+---LOOP---
+
+Continue directly from the exact final frame of the previous loop.
+
+The camera is focused on Zelda.
+
+She looks at Link with curiosity and asks:
+
+"What did you want to ask me?"
+
+The camera slowly pushes slightly closer to Zelda's face as she speaks.
+
+After her question, hold briefly on her expectant expression.
+
+Then begin a smooth camera transition toward Link.
+
+End with Link preparing to answer, visibly nervous.
+
+Audio: quiet romantic ambience, Zelda's voice clear, subtle anticipation in the background music.
+
+---LOOP---
+
+Continue directly from the exact final frame of the previous loop.
+
+The camera settles into a close-up of Link.
+
+Link hesitates for a brief moment, gathers his courage, and says:
+
+"I wanted to know if you'd like to see Epona with me."
+
+Keep the camera focused tightly on Link's face while he speaks.
+
+His expression should be sincere and slightly embarrassed.
+
+After the line, the camera slowly begins moving toward Zelda.
+
+End with Zelda looking surprised, her expression changing from confusion to realization.
+
+Audio: intimate dialogue, soft romantic ambience, very subtle musical tension building toward the question.
+
+---LOOP---
+
+Continue directly from the exact final frame of the previous loop.
+
+The camera smoothly frames Zelda in a close-up.
+
+Her eyes widen slightly. She blushes and smiles nervously.
+
+She asks:
+
+"Like... a date?"
+
+Keep the camera focused on Zelda's face and subtle emotional reaction.
+
+After she speaks, slowly shift focus toward Link.
+
+End with Link looking at Zelda with a nervous but hopeful expression.
+
+Audio: soft romantic ambience, Zelda's voice clear and slightly shy, subtle musical swell.
+
+---LOOP---
+
+Continue directly from the exact final frame of the previous loop.
+
+The camera settles into a close-up of Link.
+
+Link smiles nervously and answers:
+
+"Yes. A date."
+
+Hold briefly on his sincere expression.
+
+Then smoothly widen the shot into a medium two-shot, revealing both Zelda and Link together.
+
+Zelda smiles warmly while still blushing.
+
+Link looks relieved and happy.
+
+End with both characters looking at each other.
+
+Audio: warm romantic musical swell, intimate dialogue, subtle environmental ambience.
+
+---LOOP---
+
+Continue directly from the exact final frame of the previous loop.
+
+Begin with a medium two-shot of Zelda and Link.
+
+They remain close together, both visibly shy but happy.
+
+Zelda gives a small smile and says:
+
+"I'd like that."
+
+Link smiles with relief and responds:
+
+"Then it's a date."
+
+The camera slowly pulls back while keeping both characters centered in the frame.
+
+They exchange a warm, slightly embarrassed smile.
+
+The final frame should show Zelda and Link together, looking at each other affectionately, in a stable natural pose suitable for continuing the story.
+
+Audio: gentle romantic resolution, soft ambient environment, clear dialogue, subtle warm musical ending.
