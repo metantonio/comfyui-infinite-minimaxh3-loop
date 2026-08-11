@@ -25,6 +25,7 @@ DEFAULT_BASE_URL = "http://127.0.0.1:8188"
 PROMPT_NODE = "15"
 IMAGE_NODE = "53"
 LAST_FRAME_NODE = "92"
+LAST_FRAME_IMAGE_NODE = "93"
 PREVIEW_NODE = "56"
 SAVE_VIDEO_NODE = "85"
 
@@ -360,6 +361,7 @@ def modify_workflow(
     width=None,
     height=None,
     duration=None,
+    uploaded_last_filename=None,
 ):
     wf = json.loads(
         json.dumps(workflow)
@@ -377,6 +379,13 @@ def modify_workflow(
     # ------------------------------------------------------------------------
 
     wf[IMAGE_NODE]["inputs"]["image"] = uploaded_filename
+
+    # ------------------------------------------------------------------------
+    # Node 93 (Optional target image for last frame of starting loop)
+    # ------------------------------------------------------------------------
+
+    if uploaded_last_filename and LAST_FRAME_IMAGE_NODE in wf:
+        wf[LAST_FRAME_IMAGE_NODE]["inputs"]["image"] = uploaded_last_filename
 
     # ------------------------------------------------------------------------
     # Node 56:
@@ -2263,6 +2272,16 @@ def _main_impl():
     parser.add_argument(
         "--image",
         required=True,
+        help="Path to initial image for first frame.",
+    )
+
+    parser.add_argument(
+        "--last-image",
+        default=None,
+        help=(
+            "Optional path to ending target image (last frame) "
+            "for the starting loop."
+        ),
     )
 
     parser.add_argument(
@@ -2498,6 +2517,18 @@ def _main_impl():
             initial_image
         )
 
+    if args.last_image:
+
+        last_image_path = Path(
+            args.last_image
+        )
+
+        if not last_image_path.exists():
+
+            raise FileNotFoundError(
+                last_image_path
+            )
+
     # =========================================================================
     # OUTPUT
     # =========================================================================
@@ -2713,6 +2744,47 @@ def _main_impl():
             )
 
         # ---------------------------------------------------------------------
+        # Upload last frame (optional target image for starting loop)
+        # ---------------------------------------------------------------------
+
+        comfy_last_image_name = None
+
+        if index == args.start_loop and args.last_image:
+
+            last_upload_name = (
+                f"h3_loop_"
+                f"{index:04d}_last_target.png"
+            )
+
+            print(
+                "Uploading last target frame "
+                "to ComfyUI..."
+            )
+
+            (
+                uploaded_l_name,
+                l_subfolder,
+                _,
+            ) = upload_image(
+                args.base_url,
+                Path(args.last_image),
+                filename=last_upload_name,
+            )
+
+            if l_subfolder:
+
+                comfy_last_image_name = (
+                    f"{l_subfolder}/"
+                    f"{uploaded_l_name}"
+                )
+
+            else:
+
+                comfy_last_image_name = (
+                    uploaded_l_name
+                )
+
+        # ---------------------------------------------------------------------
         # Modify workflow
         # ---------------------------------------------------------------------
 
@@ -2724,6 +2796,7 @@ def _main_impl():
             width=args.width,
             height=args.height,
             duration=args.duration,
+            uploaded_last_filename=comfy_last_image_name,
         )
 
         actual_width, actual_height, actual_duration = (

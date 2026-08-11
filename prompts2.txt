@@ -1,216 +1,179 @@
 GLOBAL:
-Same character identity, same face, same hair, same clothing, same body proportions, same environment geometry, and same semi-realistic visual style throughout the entire sequence. Do not redesign, reinterpret, age, beautify, or alter the characters.
-
-Zelda: young woman with delicate elven facial features, fair skin, long blonde hair, blue eyes, fine facial features, wearing the exact same white clothing as shown in the opening frame.
-
-Link: young man with defined masculine facial features, fair skin, blonde hair, blue eyes, wearing the exact same green outfit as shown in the opening frame.
-
-Preserve the exact appearance of both characters from the opening frame. Do not change their faces, hairstyles, eye colors, clothing, proportions, or visual style. Maintain the same semi-realistic cinematic fantasy aesthetic throughout every loop.
-
-Each LOOP represents one continuous 5–10 second video segment. The final frame of each loop becomes the first frame of the following loop, so every scene must begin naturally from the previous scene's final pose, camera position, character positions, facial expressions, and environment.
+Maintain exact character identities, faces, clothing, environment, and semi-realistic visual style from the opening frame across all loops.
+- Zelda: blonde hair, blue eyes, wearing white outfit.
+- Link: blonde hair, blue eyes, wearing green tunic.
+Each loop inherits the previous final frame pose, camera angle, and facial expressions.
 
 CAMERA RULES:
-Use cinematic, controlled camera movement and keep the camera physically close to the characters whenever they are speaking.
-
-When Zelda speaks alone, smoothly frame Zelda in a close-up or tight medium shot, keeping her face clearly visible and sharply focused.
-
-When Link speaks alone, smoothly shift the camera to Link in a close-up or tight medium shot, keeping his face clearly visible and sharply focused.
-
-When both characters interact or speak together, use a two-shot or medium two-shot that clearly includes both characters.
-
-Use smooth motivated camera movements and subtle rack focus between characters. Do not make abrupt or random cuts.
-
-Prioritize facial expressions, eye contact, subtle reactions, and body language. The camera should follow the emotional focus of the conversation.
-
-Keep camera movement physically plausible and continuous between loops. Avoid sudden changes in camera position, lens perspective, character positions, or environment geometry.
+1. BOTH ALWAYS ON SCREEN: Keep both characters visible at all times (no solo shots).
+2. SPLIT-SCREEN ENDINGS: Every intermediate loop must end with a side-by-side split-screen close-up of both characters.
+3. FINAL CONVERGENCE: In the final loop, the split-screen ends and both step close together into a single unified two-shot frame.
 
 Zelda and Link stand together in the exact environment shown in the opening frame. They have been asked to pose together so an artist can paint a portrait of them.
 
-Begin with a medium two-shot matching the opening frame. Both characters stand naturally beside each other, slightly formal and uncertain about how they should pose.
+Begin with a medium two-shot showing both Zelda and Link on screen together. Both characters stand naturally beside each other, slightly formal and uncertain about how they should pose.
 
-The camera slowly moves closer to them while they try to remain still for the portrait. Zelda briefly looks toward Link, then quickly looks away, slightly embarrassed.
+The camera remains focused on both of them as they try to remain still for the portrait. Zelda briefly looks toward Link, then quickly looks away, slightly embarrassed. Link notices her reaction and gives a subtle nervous smile.
 
-Link notices her reaction and gives a subtle nervous smile.
+Toward the end of the scene, the camera frame transitions into a split-screen composition showing side-by-side close-ups of both characters: Zelda on one side looking shy and Link on the other side smiling nervously.
 
-The camera gently pushes in toward their faces, capturing their awkward but affectionate expressions.
-
-End the shot with Zelda and Link still standing beside each other, looking slightly embarrassed, in a natural pose that can continue directly into the next scene.
+End the shot with both Zelda and Link on screen in split-screen close-ups, looking at each other, ready for the next scene.
 
 Audio: soft ambient environment, subtle romantic cinematic atmosphere, quiet fabric movement, natural room ambience, no music overpowering the characters.
 
 ---LOOP---
 
-Continue directly from the exact final frame of the previous loop.
+Continue directly from the exact final split-screen frame of the previous loop.
 
-Maintain the same character positions, clothing, facial identity, environment, lighting, and semi-realistic style.
+Maintain both Zelda and Link on screen at all times. Both remain clearly visible throughout the entire clip.
 
-The camera remains close to Zelda and Link.
+From the dual framing, Zelda glances toward Link while visibly blushing and slightly nervous.
 
-Zelda glances toward Link again. She is visibly blushing and slightly nervous.
-
-The camera smoothly moves into a close-up of Zelda as she speaks quietly:
+Zelda speaks quietly while both characters remain on screen:
 
 "Do you think they noticed how nervous we are?"
 
-After Zelda finishes speaking, the camera slowly begins shifting its attention toward Link.
+Link listens attentively on screen, reacting to her question with a nervous expression.
 
-Link looks at her with a nervous expression, preparing to answer.
+As the scene concludes, the camera settles into a split-screen composition with side-by-side close-ups of both Zelda and Link.
 
-End with Link looking directly at Zelda, ready to speak.
+End with a split-screen frame showing close-ups of both Zelda and Link looking at each other.
 
 Audio: quiet romantic ambience, Zelda's voice clear and intimate, subtle environmental sounds.
 
 ---LOOP---
 
-Continue directly from the exact final frame of the previous loop.
+Continue directly from the exact final split-screen frame of the previous loop.
 
-The camera completes its smooth movement toward Link and frames him in a close-up.
+Keep both Zelda and Link visible on screen at all times.
 
-Link smiles nervously and answers:
+Starting from the split-screen composition, Link smiles nervously and answers while Zelda watches him on screen:
 
 "I thought you were nervous because of me."
 
-The camera remains close to Link for his line, emphasizing his embarrassed expression.
+Zelda reacts on screen with a surprised and slightly confused expression upon hearing his reply.
 
-Zelda reacts in the background. She looks surprised and slightly confused.
+As the clip ends, the framing resolves into a clear split-screen layout showing side-by-side close-ups of both characters.
 
-The camera then performs a subtle rack focus from Link to Zelda.
-
-End with Zelda looking directly at Link, clearly wanting an explanation.
+End with a split-screen frame showing close-ups of Link looking sincere and Zelda looking directly at him, wanting an explanation.
 
 Audio: soft ambient sound, intimate dialogue, subtle romantic musical undertone.
 
 ---LOOP---
 
-Continue directly from the exact final frame of the previous loop.
+Continue directly from the exact final split-screen frame of the previous loop.
 
-The camera is now focused on Zelda in a close-up.
+Ensure both Zelda and Link stay on screen at all times throughout the video.
 
-Zelda looks embarrassed but curious and says:
+Starting from the dual split-screen framing, Zelda looks embarrassed but curious and says while Link listens on screen:
 
 "Because of you? I thought you were the one avoiding me."
 
-The camera stays close to Zelda while she speaks.
+Link reacts subtly on screen, looking surprised by her statement.
 
-Link reacts subtly in the background, looking surprised.
+Toward the end of the scene, the framing reinforces the split-screen layout with side-by-side close-ups of both characters.
 
-After Zelda finishes speaking, the camera slowly shifts focus toward Link.
-
-End with Link looking at Zelda with a nervous but sincere expression.
+End with a split-screen frame displaying close-ups of Zelda looking curious and Link looking nervous but sincere.
 
 Audio: quiet ambience, Zelda's voice close and clear, subtle emotional musical swell.
 
 ---LOOP---
 
-Continue directly from the exact final frame of the previous loop.
+Continue directly from the exact final split-screen frame of the previous loop.
 
-The camera smoothly moves into a close-up of Link.
+Keep both Zelda and Link continuously on screen together.
 
-Link gives a small nervous smile and says:
+From the split-screen alignment, Link gives a small nervous smile and speaks while Zelda watches him attentively on screen:
 
 "No... I was trying not to make it obvious that I wanted to ask you something."
 
-The camera remains focused on Link's face throughout the line.
+Zelda remains on screen, watching him with growing curiosity and anticipation.
 
-Zelda watches him from the edge of the frame.
+As the clip comes to an end, the camera maintains a split-screen composition with side-by-side close-ups of both characters.
 
-After he finishes speaking, the camera subtly shifts toward Zelda.
-
-End with Zelda looking at Link with curiosity.
+End with a split-screen frame featuring close-ups of Link finishing his line and Zelda looking expectant.
 
 Audio: soft romantic ambience, Link's voice clear and intimate, subtle background environment.
 
 ---LOOP---
 
-Continue directly from the exact final frame of the previous loop.
+Continue directly from the exact final split-screen frame of the previous loop.
 
-The camera is focused on Zelda.
+Maintain both characters visible on screen during the entire clip.
 
-She looks at Link with curiosity and asks:
+Starting from the split-screen close-ups, Zelda looks at Link with curiosity and asks while Link listens nervously on screen:
 
 "What did you want to ask me?"
 
-The camera slowly pushes slightly closer to Zelda's face as she speaks.
+Hold on both characters' reactions as the question is asked.
 
-After her question, hold briefly on her expectant expression.
+As the scene draws to a close, the camera finishes on a split-screen layout with side-by-side close-ups of both Zelda and Link.
 
-Then begin a smooth camera transition toward Link.
-
-End with Link preparing to answer, visibly nervous.
+End with a split-screen frame showing Zelda expecting an answer and Link preparing to speak.
 
 Audio: quiet romantic ambience, Zelda's voice clear, subtle anticipation in the background music.
 
 ---LOOP---
 
-Continue directly from the exact final frame of the previous loop.
+Continue directly from the exact final split-screen frame of the previous loop.
 
-The camera settles into a close-up of Link.
+Both Zelda and Link must remain on screen at all times without exception.
 
-Link hesitates for a brief moment, gathers his courage, and says:
+Starting from the split-screen layout, Link hesitates briefly, gathers his courage, and speaks while Zelda listens on screen:
 
 "I wanted to know if you'd like to see Epona with me."
 
-Keep the camera focused tightly on Link's face while he speaks.
+Zelda remains visible on screen, her expression changing from curiosity to surprise and realization.
 
-His expression should be sincere and slightly embarrassed.
+At the conclusion of the scene, the camera locks into a split-screen framing showing side-by-side close-ups of both characters.
 
-After the line, the camera slowly begins moving toward Zelda.
+End with a split-screen frame displaying close-ups of Link looking earnest and Zelda blushing with surprise.
 
-End with Zelda looking surprised, her expression changing from confusion to realization.
-
-Audio: intimate dialogue, soft romantic ambience, very subtle musical tension building toward the question.
+Audio: intimate dialogue, soft romantic ambience, subtle musical tension building toward the question.
 
 ---LOOP---
 
-Continue directly from the exact final frame of the previous loop.
+Continue directly from the exact final split-screen frame of the previous loop.
 
-The camera smoothly frames Zelda in a close-up.
+Keep both Zelda and Link on screen together throughout the scene.
 
-Her eyes widen slightly. She blushes and smiles nervously.
-
-She asks:
+From the split-screen presentation, Zelda's eyes widen slightly, she blushes, and asks with a gentle smile while Link reacts on screen:
 
 "Like... a date?"
 
-Keep the camera focused on Zelda's face and subtle emotional reaction.
+Link stays visible on screen, listening to her question with a hopeful and nervous expression.
 
-After she speaks, slowly shift focus toward Link.
+As the clip reaches its end, the camera returns to a split-screen composition with side-by-side close-ups of both characters.
 
-End with Link looking at Zelda with a nervous but hopeful expression.
+End with a split-screen frame showing close-ups of Zelda smiling shyly and Link looking hopeful.
 
 Audio: soft romantic ambience, Zelda's voice clear and slightly shy, subtle musical swell.
 
 ---LOOP---
 
-Continue directly from the exact final frame of the previous loop.
+Continue directly from the exact final split-screen frame of the previous loop.
 
-The camera settles into a close-up of Link.
+Maintain both Zelda and Link on screen at all times.
 
-Link smiles nervously and answers:
+From the split-screen layout, Link smiles nervously and confirms while Zelda listens warmly on screen:
 
 "Yes. A date."
 
-Hold briefly on his sincere expression.
+Zelda smiles warmly on screen while still blushing, looking relieved and happy.
 
-Then smoothly widen the shot into a medium two-shot, revealing both Zelda and Link together.
+As the scene ends, the camera settles into a split-screen framing showing side-by-side close-ups of both characters.
 
-Zelda smiles warmly while still blushing.
-
-Link looks relieved and happy.
-
-End with both characters looking at each other.
+End with a split-screen frame showing close-ups of both Zelda and Link looking at each other affectionately.
 
 Audio: warm romantic musical swell, intimate dialogue, subtle environmental ambience.
 
 ---LOOP---
 
-Continue directly from the exact final frame of the previous loop.
+Continue directly from the exact final split-screen frame of the previous loop.
 
-Begin with a medium two-shot of Zelda and Link.
+FINAL SCENE: BOTH CHARACTERS ON SCREEN & SPLIT-SCREEN ENDING CONVERGENCE.
 
-They remain close together, both visibly shy but happy.
-
-Zelda gives a small smile and says:
+Begin with both Zelda and Link on screen. Zelda gives a small smile and says:
 
 "I'd like that."
 
@@ -218,10 +181,10 @@ Link smiles with relief and responds:
 
 "Then it's a date."
 
-The camera slowly pulls back while keeping both characters centered in the frame.
+During this final scene, the split-screen layout ends and resolves completely. Zelda and Link step physically close enough to each other so that they merge into a single, unified, continuous camera shot containing both characters together, without any split screen divider.
 
-They exchange a warm, slightly embarrassed smile.
+They stand right beside each other in close proximity, exchanging a warm, affectionate smile in the same unified frame.
 
-The final frame should show Zelda and Link together, looking at each other affectionately, in a stable natural pose suitable for continuing the story.
+The final frame shows Zelda and Link together in a single close two-shot, standing side-by-side without split screen, looking at each other affectionately in a stable, beautiful closing pose.
 
 Audio: gentle romantic resolution, soft ambient environment, clear dialogue, subtle warm musical ending.

@@ -111,6 +111,13 @@ Run the automation loop starting with an initial seed image (`initial.jpg`):
 python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\initial.jpg
 ```
 
+### Specifying Custom Starting & Ending Images for Loop 1
+Optionally specify both a custom starting frame (`--image`) and a custom ending target frame (`--last-image`) for the initial loop:
+
+```powershell
+python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\initial.jpg --last-image .\initial2.jpg
+```
+
 ### Specifying Loop Count & Video Parameters
 Override video resolution (`864x480` - multiple of 32), clip duration (`5s`), and limit the execution to 8 loops:
 
@@ -141,6 +148,7 @@ python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --im
 | `--workflow` | `str` | *Required* | Path to ComfyUI API workflow JSON (`MiniMax_H3_Loop_API.json`). |
 | `--prompt` | `str` | *Required* | Path to prompt text file containing `GLOBAL:` and `---LOOP---` splitters. |
 | `--image` | `str` | *Required* | Path to initial image used as the first frame for the starting loop. |
+| `--last-image` | `str` | `None` | Optional path to target image used as the last frame for the starting loop. |
 | `--base-url` | `str` | `http://127.0.0.1:8188` | Base URL of the running ComfyUI API server. |
 | `--loops` | `int` | `0` | Number of loops to process (`0` processes all remaining prompts). |
 | `--start-loop` | `int` | `1` | 1-based prompt index to start from. |

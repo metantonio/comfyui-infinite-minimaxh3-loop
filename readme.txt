@@ -51,6 +51,9 @@ The character suddenly hears a deep rumble and turns toward the source of the so
 # Basic run (all prompts):
 python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\initial.jpg
 
+# Specify custom start and end target images for the first loop:
+python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\initial.jpg --last-image .\initial2.jpg
+
 # Run specific number of loops (e.g. 8 loops):
 python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\initial.jpg --loops 8
 
