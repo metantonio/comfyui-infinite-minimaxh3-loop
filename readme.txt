@@ -65,3 +65,6 @@ python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --im
 
 # Workflow structural check (dry run):
 python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\initial.jpg --check
+
+
+python loop_audio.py --workflow MiniMax_H3_Loop_API_AUDIO.json --prompt prompts2.txt --image initial.jpg --width 864 --height 480
