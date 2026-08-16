@@ -396,11 +396,71 @@ def modify_workflow(
     wf[IMAGE_NODE]["inputs"]["image"] = uploaded_filename
 
     # ------------------------------------------------------------------------
-    # Node 93 (Optional target image for last frame of starting loop)
+    # LAST-FRAME TARGET SAFETY
+    #
+    # A generated last frame is NOT the same thing as a requested last-frame
+    # target. Unless --last-frame was explicitly supplied, remove the H3
+    # last_frame input AND the target-image nodes from the payload.
+    #
+    # This is deliberately enforced on EVERY loop, including loop 1.
     # ------------------------------------------------------------------------
 
-    if uploaded_last_filename and LAST_FRAME_IMAGE_NODE in wf:
-        wf[LAST_FRAME_IMAGE_NODE]["inputs"]["image"] = uploaded_last_filename
+    h3_inputs = wf[PROMPT_NODE]["inputs"]
+
+    if uploaded_last_filename:
+        # --last-frame was explicitly requested.
+        if LAST_FRAME_IMAGE_NODE not in wf:
+            raise RuntimeError(
+                f"--last-frame was supplied, but node "
+                f"{LAST_FRAME_IMAGE_NODE} is missing from the workflow."
+            )
+
+        if LAST_FRAME_NODE not in wf:
+            raise RuntimeError(
+                f"--last-frame was supplied, but node "
+                f"{LAST_FRAME_NODE} is missing from the workflow."
+            )
+
+        wf[LAST_FRAME_IMAGE_NODE]["inputs"]["image"] = (
+            uploaded_last_filename
+        )
+
+        h3_inputs["last_frame"] = [
+            LAST_FRAME_NODE,
+            0,
+        ]
+
+    else:
+        # NO --last-frame: absolutely no fixed last-frame target.
+        h3_inputs.pop("last_frame", None)
+
+        # Remove the target nodes from this request payload as an additional
+        # safety measure. They cannot accidentally participate in execution.
+        wf.pop(LAST_FRAME_NODE, None)
+        wf.pop(LAST_FRAME_IMAGE_NODE, None)
+
+    # ------------------------------------------------------------------------
+    # HARD VALIDATION BEFORE SUBMISSION
+    # ------------------------------------------------------------------------
+
+    has_last_frame = "last_frame" in h3_inputs
+    has_target_nodes = (
+        LAST_FRAME_NODE in wf or
+        LAST_FRAME_IMAGE_NODE in wf
+    )
+
+    if not uploaded_last_filename:
+        if has_last_frame or has_target_nodes:
+            raise RuntimeError(
+                "SAFETY ERROR: a last-frame target is still present in "
+                "the workflow even though --last-frame was NOT supplied."
+            )
+    else:
+        if not has_last_frame:
+            raise RuntimeError(
+                "SAFETY ERROR: --last-frame was supplied but node 15 "
+                "does not contain a last_frame input."
+            )
 
     # ------------------------------------------------------------------------
     # Node 56:
@@ -453,26 +513,16 @@ def modify_workflow(
     )
 
     # ------------------------------------------------------------------------
-    # Temporal logic
+    # TEMPORAL LOGIC
     #
-    # LOOP 1:
-    #   Keep original workflow last_frame.
+    # The generated previous last frame is handled by IMAGE_NODE (first_frame)
+    # on the next loop. It must NEVER be promoted to H3's last_frame target.
     #
-    # LOOP 2+:
-    #   Remove last_frame completely.
+    # The ONLY exception is an explicit --last-frame request, represented by
+    # uploaded_last_filename. That target is intentionally allowed above.
     #
-    # Therefore:
-    #
-    # loop 1 = initial image + workflow fixed last frame
-    # loop 2+ = previous last frame is the ONLY supplied temporal frame
+    # This applies identically to loop 1 and loop 2+.
     # ------------------------------------------------------------------------
-
-    if loop_index >= 2:
-
-        wf[PROMPT_NODE]["inputs"].pop(
-            "last_frame",
-            None
-        )
 
     return wf
 
@@ -3052,20 +3102,52 @@ def _main_impl():
             f"{actual_duration}s"
         )
 
-        if index == 1:
+        h3_inputs = wf[PROMPT_NODE]["inputs"]
+        has_last_frame = "last_frame" in h3_inputs
 
+        if comfy_last_image_name:
             print(
-                "Temporal mode: LOOP 1 "
-                "uses the workflow's "
-                "fixed last_frame."
+                "Temporal mode: EXPLICIT "
+                "last-frame target enabled "
+                "(--last-frame)."
+            )
+        else:
+            print(
+                "Temporal mode: FIRST-FRAME ONLY "
+                "| no last-frame target."
             )
 
-        else:
+        # Print the exact payload state that is about to be submitted.
+        print(
+            f"PAYLOAD VALIDATION | "
+            f"node {PROMPT_NODE}.first_frame="
+            f"{h3_inputs.get('first_frame')}"
+        )
+        print(
+            f"PAYLOAD VALIDATION | "
+            f"node {PROMPT_NODE}.last_frame="
+            f"{h3_inputs.get('last_frame')}"
+        )
+        print(
+            f"PAYLOAD VALIDATION | "
+            f"node {LAST_FRAME_NODE} exists="
+            f"{LAST_FRAME_NODE in wf}"
+        )
+        print(
+            f"PAYLOAD VALIDATION | "
+            f"node {LAST_FRAME_IMAGE_NODE} exists="
+            f"{LAST_FRAME_IMAGE_NODE in wf}"
+        )
 
-            print(
-                "Temporal mode: no fixed "
-                "last_frame; supplied/current "
-                "image is first_frame only."
+        # Final fail-safe: never submit an unauthorized target.
+        if not comfy_last_image_name and (
+            has_last_frame or
+            LAST_FRAME_NODE in wf or
+            LAST_FRAME_IMAGE_NODE in wf
+        ):
+            raise RuntimeError(
+                "REFUSING TO SUBMIT: unauthorized last-frame target "
+                "detected in the effective ComfyUI payload."
             )
 
         print(

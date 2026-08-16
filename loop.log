@@ -6429,3 +6429,251 @@ POST-GENERATION CLEANUP / COOLING
 [COOLDOWN] 10s | RAM 11.9 GB | VRAM 0.28 GB | GPU 68 C     2026-08-16 23:33:21 | COOLDOWN 5s | RAM 11.9 GB | VRAM 0.28 GB | GPU 67 C
 [COOLDOWN]  5s | RAM 11.9 GB | VRAM 0.28 GB | GPU 67 C     2026-08-16 23:33:25 | COOLDOWN 3s | RAM 12.0 GB | VRAM 0.28 GB | GPU 67 C
 [COOLDOWN]  3s | RAM 12.0 GB | VRAM 0.28 GB | GPU 67 C     2026-08-16 23:33:27 | INTERRUPTED BY USER
+
+================================================================================
+LOG FILE: C:\Users\anton\Downloads\workflow_minimax_con_custom_loop\loop.log
+2026-08-16 23:37:47 | LOGGING INITIALIZED
+START TIME: 2026-08-16 23:37:47
+================================================================================
+======================================================================
+2026-08-16 23:37:47 | RUN FINISHED SUCCESSFULLY
+MiniMax H3 API Workflow Check
+======================================================================
+OK  node 15: 'MiniMaxH3ImageToVideo' (expected 'MiniMaxH3ImageToVideo')
+OK  node 53: 'LoadImage' (expected 'LoadImage')
+OK  node 56: 'PreviewImage' (expected 'PreviewImage')
+OK  node 57: 'ImageResizeKJv2' (expected 'ImageResizeKJv2')
+OK  node 85: 'SaveVideo' (expected 'SaveVideo')
+OK  node 94: 'SaveAudio' (expected 'SaveAudio')
+
+Prompt input:        node 15 / inputs.prompt
+First-frame source:  ['57', 0]
+Last-frame source:   ['92', 0]
+Node 53 image:       16411743862036d3rks5p4rctuupntpxzidysrzn6r5wtfrqgs56dpbxsjplpilfoh6n2tduxmt89tgctqo2rdrkufuh0v19uarxsonji6es7g3hcu.jpg
+Preview output:      node 56 <- generated frames node 35
+Audio output:        node 94 <- decoded audio node 36
+Width:               node 69 -> None
+Height:              node 70 -> None
+Duration:            node 18 -> Nones
+======================================================================
+
+Prompts available: 10
+Starting at loop: 1
+Executing loops: 1-10
+Initial image for starting loop: initial2.jpg
+
+VIDEO CONFIGURATION
+  Width:     864
+  Height:    480
+  Duration:  Nones
+
+Width: overridden from CLI.
+Height: overridden from CLI.
+Duration: using workflow default.
+
+[BEFORE START] RAM 13.4/31.2 GB (43%) | VRAM 0.28/11.99 GB | GPU TEMP 60 C
+2026-08-16 23:37:49 | RUN INITIALIZED
+
+======================================================================
+LOOP 1/10
+2026-08-16 23:37:49 | LOOP 1 START
+2026-08-16 23:37:49 | PROMPT LENGTH: 1774 characters
+======================================================================
+GLOBAL:
+Maintain exact character identities, faces, clothing, environment, and semi-realistic visual style from the opening frame across all loops.
+- Zelda: blonde hair, blue eyes, wearing white outfit.
+- Link: blonde hair, blue eyes, wearing green tunic.
+Each loop inherits the previous final frame pose, camera angle, and facial expressions.
+
+CAMERA RULES:
+1. BOTH ALWAYS ON SCREEN: Keep both characters visible at all times (no solo shots).
+2. SPLIT-SCREEN ENDINGS: Every intermediate loop must end with a side-by-side split-screen close-up of both characters.
+3. FINAL CONVERGENCE: In the final loop, the split-screen ends and both step close together into a single unified two-shot frame.
+
+Zelda and Link stand together in the exact environment shown in the opening frame. They have been asked to pose together so an artist can paint a portrait of them.
+
+Begin with a medium two-shot showing both Zelda and Link on screen together. Both characters stand naturally beside each other, slightly formal and uncertain about how they should pose.
+
+The camera remains focused on both of them as they try to remain still for the portrait. Zelda briefly looks toward Link, then quickly looks away, slightly embarrassed. Link notices her reaction and gives a subtle nervous smile.
+
+Toward the end of the scene, the camera frame transitions into a split-screen composition showing side-by-side close-ups of both characters: Zelda on one side looking shy and Link on the other side smiling nervously.
+
+End the shot with both Zelda and Link on screen in split-screen close-ups, looking at each other, ready for the next scene.
+
+Audio: soft ambient environment, subtle romantic cinematic atmosphere, quiet fabric movement, natural room ambience, no music overpowering the characters.
+
+Uploading first frame to ComfyUI...
+2026-08-16 23:37:49 | RANDOM SEED: 108896327809413 | RandomNoise node: 20
+2026-08-16 23:37:49 | VIDEO PARAMETERS | resolution=864x480 | duration=Nones
+Node 53 image: h3_loop_0001_first.png
+Final-frame capture: PreviewImage 56 <- VAEDecode 35
+Video resolution: 864x480
+Video duration: Nones
+Temporal mode: LOOP 1 uses the workflow's fixed last_frame.
+Submitting workflow to ComfyUI...
+2026-08-16 23:37:49 | LOOP 1 SUBMITTED TO COMFYUI
+Prompt ID: 17b8d81e-0924-4dd0-bd5a-935389e5a959
+Waiting for ComfyUI...
+2026-08-16 23:37:49 | LOOP 1 MONITOR STARTED | interval=5s
+2026-08-16 23:37:56 | LOOP 1 MONITOR | RAM 20.1/31.2 GB (64%) | CPU 66% | GPU 65% | VRAM 10.84/11.99 GB | GPU TEMP 73 C | GPU POWER 117.3 W | GPU CLOCK 2430 MHz
+2026-08-16 23:38:04 | LOOP 1 MONITOR | RAM 24.7/31.2 GB (79%) | CPU 56% | GPU 85% | VRAM 10.17/11.99 GB | GPU TEMP 82 C | GPU POWER 140.6 W | GPU CLOCK 1905 MHz
+2026-08-16 23:38:12 | LOOP 1 MONITOR | RAM 27.5/31.2 GB (88%) | CPU 8% | GPU 100% | VRAM 9.99/11.99 GB | GPU TEMP 88 C | GPU POWER 150.2 W | GPU CLOCK 2055 MHz
+2026-08-16 23:38:20 | LOOP 1 MONITOR | RAM 28.0/31.2 GB (90%) | CPU 24% | GPU 100% | VRAM 9.65/11.99 GB | GPU TEMP 87 C | GPU POWER 137.6 W | GPU CLOCK 1755 MHz
+2026-08-16 23:38:28 | LOOP 1 MONITOR | RAM 27.7/31.2 GB (89%) | CPU 2% | GPU 100% | VRAM 9.65/11.99 GB | GPU TEMP 88 C | GPU POWER 128.1 W | GPU CLOCK 1860 MHz
+2026-08-16 23:38:35 | LOOP 1 MONITOR | RAM 27.7/31.2 GB (89%) | CPU 3% | GPU 100% | VRAM 9.65/11.99 GB | GPU TEMP 87 C | GPU POWER 118.0 W | GPU CLOCK 1770 MHz
+2026-08-16 23:38:44 | LOOP 1 MONITOR | RAM 26.5/31.2 GB (85%) | CPU 65% | GPU 19% | VRAM 9.63/11.99 GB | GPU TEMP 75 C | GPU POWER 39.9 W | GPU CLOCK 990 MHz
+2026-08-16 23:38:51 | LOOP 1 MONITOR | RAM 26.7/31.2 GB (86%) | CPU 8% | GPU 100% | VRAM 10.57/11.99 GB | GPU TEMP 87 C | GPU POWER 120.2 W | GPU CLOCK 1770 MHz
+2026-08-16 23:38:59 | LOOP 1 MONITOR | RAM 27.3/31.2 GB (88%) | CPU 58% | GPU 0% | VRAM 9.93/11.99 GB | GPU TEMP 74 C | GPU POWER 18.9 W | GPU CLOCK 225 MHz
+2026-08-16 23:39:02 | LOOP 1 MONITOR STOPPED
+ComfyUI job completed.
+2026-08-16 23:39:02 | LOOP 1 VIDEO COMPLETED
+2026-08-16 23:39:02 | VIDEO GENERATED IN 73.3 SECONDS
+Last frame saved immediately: h3_loop_output\loop_0001_last.png
+2026-08-16 23:39:02 | LAST FRAME SAVED: h3_loop_output\loop_0001_last.png
+2026-08-16 23:39:02 | AUDIO SAVED: h3_loop_output\loop_0001_audio.flac
+2026-08-16 23:39:02 | WARNING: SaveVideo output metadata was not found; final video assembly may be unavailable.
+2026-08-16 23:39:02 | LOOP 1 COMPLETE
+[AFTER LOOP 1] RAM 27.3/31.2 GB (87%) | VRAM 9.93/11.99 GB | GPU TEMP 72 C
+
+======================================================================
+POST-GENERATION CLEANUP / COOLING
+======================================================================
+2026-08-16 23:39:04 | POST-GENERATION CLEANUP START
+[1/5] Requesting ComfyUI /free...
+2026-08-16 23:39:04 | REQUESTING COMFYUI /free
+2026-08-16 23:39:04 | COMFYUI /free SUCCESS
+[CLEANUP] ComfyUI released cached models/memory.
+[2/5] Running Python garbage collection...
+[CLEANUP] Python GC released 0 objects.
+[CLEANUP] Local torch CUDA cleanup not available: No module named 'torch'
+[AFTER /free + GC] RAM 23.3/31.2 GB (75%) | VRAM 0.31/11.99 GB | GPU TEMP 72 C
+[3/5] Waiting for VRAM threshold...
+
+[WAIT VRAM] Waiting for VRAM < 1.00 GB...
+2026-08-16 23:39:06 | WAITING FOR VRAM < 1.00 GB
+2026-08-16 23:39:08 | VRAM BELOW LIMIT | 0.28 GB
+[WAIT VRAM] OK: 0.28 GB < 1.00 GB
+[4/5] Waiting for RAM threshold...
+
+[WAIT RAM] Waiting for RAM < 16.0 GB...
+2026-08-16 23:39:08 | WAITING FOR RAM < 16.0 GB
+2026-08-16 23:39:10 | RAM BELOW LIMIT | 11.5 GB
+[WAIT RAM] OK: 11.5 GB < 16.0 GB
+[5/5] Memory thresholds reached.
+
+[COOLDOWN] Memory thresholds reached.
+[COOLDOWN] Waiting additional 30 seconds...
+2026-08-16 23:39:10 | ADDITIONAL COOLDOWN START | 30s
+2026-08-16 23:39:12 | COOLDOWN 30s | RAM 11.5 GB | VRAM 0.28 GB | GPU 70 C
+[COOLDOWN] 30s | RAM 11.5 GB | VRAM 0.28 GB | GPU 70 C     2026-08-16 23:39:19 | COOLDOWN 25s | RAM 11.5 GB | VRAM 0.28 GB | GPU 69 C
+[COOLDOWN] 25s | RAM 11.5 GB | VRAM 0.28 GB | GPU 69 C     2026-08-16 23:39:26 | COOLDOWN 20s | RAM 11.5 GB | VRAM 0.28 GB | GPU 68 C
+[COOLDOWN] 20s | RAM 11.5 GB | VRAM 0.28 GB | GPU 68 C     2026-08-16 23:39:33 | COOLDOWN 15s | RAM 11.4 GB | VRAM 0.28 GB | GPU 67 C
+[COOLDOWN] 15s | RAM 11.4 GB | VRAM 0.28 GB | GPU 67 C     2026-08-16 23:39:40 | COOLDOWN 10s | RAM 11.4 GB | VRAM 0.28 GB | GPU 66 C
+[COOLDOWN] 10s | RAM 11.4 GB | VRAM 0.28 GB | GPU 66 C     2026-08-16 23:39:47 | COOLDOWN 5s | RAM 11.4 GB | VRAM 0.28 GB | GPU 66 C
+[COOLDOWN]  5s | RAM 11.4 GB | VRAM 0.28 GB | GPU 66 C     2026-08-16 23:39:51 | COOLDOWN 3s | RAM 11.4 GB | VRAM 0.28 GB | GPU 65 C
+[COOLDOWN]  3s | RAM 11.4 GB | VRAM 0.28 GB | GPU 65 C     2026-08-16 23:39:54 | COOLDOWN 2s | RAM 11.4 GB | VRAM 0.28 GB | GPU 65 C
+[COOLDOWN]  2s | RAM 11.4 GB | VRAM 0.28 GB | GPU 65 C     2026-08-16 23:39:56 | COOLDOWN 1s | RAM 11.4 GB | VRAM 0.28 GB | GPU 65 C
+[COOLDOWN]  1s | RAM 11.4 GB | VRAM 0.28 GB | GPU 65 C     
+[COOLDOWN] Additional cooldown complete.
+2026-08-16 23:39:58 | ADDITIONAL COOLDOWN COMPLETE
+
+[TEMPERATURE] Checking GPU temperature...
+2026-08-16 23:39:59 | GPU TEMP AFTER COOLDOWN | 65 C
+
+[WAIT TEMP] Waiting for GPU temperature < 68 C...
+2026-08-16 23:39:59 | WAITING FOR GPU TEMP < 68 C
+2026-08-16 23:40:01 | GPU TEMPERATURE SAFE | 64 C
+[WAIT TEMP] OK: 64 C < 68 C
+
+[READY FOR NEXT LOOP] RAM 11.4/31.2 GB (37%) | VRAM 0.28/11.99 GB | GPU TEMP 64 C
+2026-08-16 23:40:03 | POST-GENERATION CLEANUP COMPLETE
+======================================================================
+
+======================================================================
+LOOP 2/10
+2026-08-16 23:40:03 | LOOP 2 START
+2026-08-16 23:40:03 | PROMPT LENGTH: 803 characters
+======================================================================
+Continue directly from the exact final split-screen frame of the previous loop.
+
+Maintain both Zelda and Link on screen at all times. Both remain clearly visible throughout the entire clip.
+
+From the dual framing, Zelda glances toward Link while visibly blushing and slightly nervous.
+
+Zelda speaks quietly while both characters remain on screen:
+
+"Do you think they noticed how nervous we are?"
+
+Link listens attentively on screen, reacting to her question with a nervous expression.
+
+As the scene concludes, the camera settles into a split-screen composition with side-by-side close-ups of both Zelda and Link.
+
+End with a split-screen frame showing close-ups of both Zelda and Link looking at each other.
+
+Audio: quiet romantic ambience, Zelda's voice clear and intimate, subtle environmental sounds.
+
+Uploading first frame to ComfyUI...
+2026-08-16 23:40:03 | RANDOM SEED: 900024239643320 | RandomNoise node: 20
+2026-08-16 23:40:03 | VIDEO PARAMETERS | resolution=864x480 | duration=Nones
+Node 53 image: h3_loop_0002_first.png
+Final-frame capture: PreviewImage 56 <- VAEDecode 35
+Video resolution: 864x480
+Video duration: Nones
+Temporal mode: no fixed last_frame; supplied/current image is first_frame only.
+Submitting workflow to ComfyUI...
+2026-08-16 23:40:03 | LOOP 2 SUBMITTED TO COMFYUI
+Prompt ID: 86c5c393-f526-4a25-8e75-4b03f679908b
+Waiting for ComfyUI...
+2026-08-16 23:40:03 | LOOP 2 MONITOR STARTED | interval=5s
+2026-08-16 23:40:11 | LOOP 2 MONITOR | RAM 17.7/31.2 GB (57%) | CPU 67% | GPU 34% | VRAM 10.84/11.99 GB | GPU TEMP 76 C | GPU POWER 79.9 W | GPU CLOCK 2430 MHz
+2026-08-16 23:40:19 | LOOP 2 MONITOR | RAM 22.3/31.2 GB (71%) | CPU 56% | GPU 56% | VRAM 10.23/11.99 GB | GPU TEMP 91 C | GPU POWER 151.5 W | GPU CLOCK 2415 MHz
+2026-08-16 23:40:26 | LOOP 2 MONITOR | RAM 25.0/31.2 GB (80%) | CPU 10% | GPU 98% | VRAM 10.32/11.99 GB | GPU TEMP 88 C | GPU POWER 133.2 W | GPU CLOCK 1905 MHz
+2026-08-16 23:40:33 | LOOP 2 MONITOR | RAM 25.5/31.2 GB (82%) | CPU 16% | GPU 100% | VRAM 10.03/11.99 GB | GPU TEMP 86 C | GPU POWER 127.5 W | GPU CLOCK 1830 MHz
+2026-08-16 23:40:40 | LOOP 2 MONITOR | RAM 25.8/31.2 GB (83%) | CPU 18% | GPU 100% | VRAM 9.71/11.99 GB | GPU TEMP 88 C | GPU POWER 118.4 W | GPU CLOCK 1800 MHz
+2026-08-16 23:40:47 | LOOP 2 MONITOR | RAM 26.0/31.2 GB (83%) | CPU 5% | GPU 100% | VRAM 9.71/11.99 GB | GPU TEMP 87 C | GPU POWER 112.0 W | GPU CLOCK 1620 MHz
+2026-08-16 23:40:54 | LOOP 2 MONITOR | RAM 26.0/31.2 GB (83%) | CPU 4% | GPU 100% | VRAM 9.71/11.99 GB | GPU TEMP 87 C | GPU POWER 108.0 W | GPU CLOCK 1620 MHz
+2026-08-16 23:41:01 | LOOP 2 MONITOR | RAM 26.1/31.2 GB (84%) | CPU 6% | GPU 97% | VRAM 10.54/11.99 GB | GPU TEMP 87 C | GPU POWER 112.9 W | GPU CLOCK 1710 MHz
+2026-08-16 23:41:08 | LOOP 2 MONITOR | RAM 26.6/31.2 GB (85%) | CPU 8% | GPU 0% | VRAM 9.93/11.99 GB | GPU TEMP 77 C | GPU POWER 35.9 W | GPU CLOCK 2430 MHz
+2026-08-16 23:41:16 | LOOP 2 MONITOR | RAM 26.6/31.2 GB (85%) | CPU 1% | GPU 0% | VRAM 9.93/11.99 GB | GPU TEMP 74 C | GPU POWER 7.7 W | GPU CLOCK 210 MHz
+2026-08-16 23:41:16 | LOOP 2 MONITOR STOPPED
+ComfyUI job completed.
+2026-08-16 23:41:16 | LOOP 2 VIDEO COMPLETED
+2026-08-16 23:41:16 | VIDEO GENERATED IN 72.4 SECONDS
+Last frame saved immediately: h3_loop_output\loop_0002_last.png
+2026-08-16 23:41:16 | LAST FRAME SAVED: h3_loop_output\loop_0002_last.png
+2026-08-16 23:41:16 | AUDIO SAVED: h3_loop_output\loop_0002_audio.flac
+2026-08-16 23:41:16 | WARNING: SaveVideo output metadata was not found; final video assembly may be unavailable.
+2026-08-16 23:41:16 | LOOP 2 COMPLETE
+[AFTER LOOP 2] RAM 26.6/31.2 GB (85%) | VRAM 9.93/11.99 GB | GPU TEMP 73 C
+
+======================================================================
+POST-GENERATION CLEANUP / COOLING
+======================================================================
+2026-08-16 23:41:18 | POST-GENERATION CLEANUP START
+[1/5] Requesting ComfyUI /free...
+2026-08-16 23:41:18 | REQUESTING COMFYUI /free
+2026-08-16 23:41:18 | COMFYUI /free SUCCESS
+[CLEANUP] ComfyUI released cached models/memory.
+[2/5] Running Python garbage collection...
+[CLEANUP] Python GC released 0 objects.
+[CLEANUP] Local torch CUDA cleanup not available: No module named 'torch'
+[AFTER /free + GC] RAM 23.2/31.2 GB (74%) | VRAM 0.31/11.99 GB | GPU TEMP 73 C
+[3/5] Waiting for VRAM threshold...
+
+[WAIT VRAM] Waiting for VRAM < 1.00 GB...
+2026-08-16 23:41:20 | WAITING FOR VRAM < 1.00 GB
+2026-08-16 23:41:22 | VRAM BELOW LIMIT | 0.28 GB
+[WAIT VRAM] OK: 0.28 GB < 1.00 GB
+[4/5] Waiting for RAM threshold...
+
+[WAIT RAM] Waiting for RAM < 16.0 GB...
+2026-08-16 23:41:22 | WAITING FOR RAM < 16.0 GB
+2026-08-16 23:41:24 | RAM BELOW LIMIT | 11.1 GB
+[WAIT RAM] OK: 11.1 GB < 16.0 GB
+[5/5] Memory thresholds reached.
+
+[COOLDOWN] Memory thresholds reached.
+[COOLDOWN] Waiting additional 30 seconds...
+2026-08-16 23:41:24 | ADDITIONAL COOLDOWN START | 30s
+2026-08-16 23:41:26 | COOLDOWN 30s | RAM 11.0 GB | VRAM 0.28 GB | GPU 72 C
+[COOLDOWN] 30s | RAM 11.0 GB | VRAM 0.28 GB | GPU 72 C     2026-08-16 23:41:27 | INTERRUPTED BY USER
