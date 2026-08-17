@@ -1,0 +1,259 @@
+GLOBAL:
+
+Maintain exact character identities, facial features, hair, clothing, environment, lighting, and semi-realistic next-generation 3D visual style from the opening frame across all loops.
+
+* Link: young child, blonde hair, blue eyes, pointed Hylian ears, wearing his iconic green tunic with leather details, barefoot.
+* Link must remain visually identical whenever he appears.
+* The opening environment is a rustic Kokiri-style dwelling with woven straw bedding, natural materials, dark fabric curtains, warm dim lighting, and cinematic shadows.
+* The opening image is only the visual starting point of the film.
+* The original poster composition must transition into a fully immersive cinematic world.
+* Do NOT show Zelda yet.
+* Do NOT show the Master Sword yet.
+* Do NOT introduce other major characters yet.
+
+LOGO REMOVAL:
+
+The "THE LEGEND OF ZELDA — OCARINA OF TIME" logo, Master Sword, Hylian Shield, and all promotional poster graphics are only part of the reference image.
+
+They must completely disappear during the opening camera transition.
+
+The logo and poster graphics must NEVER reappear in any subsequent loop.
+
+The final result must look like a cinematic fantasy movie, not a game poster.
+
+NARRATOR:
+
+Use a deep an calm, powerful, imposing male English narrator voice.
+
+The narrator should sound like an ancient storyteller describing the beginning of a legendary prophecy.
+
+Slow, deliberate delivery.
+
+Strong dramatic pauses.
+
+Authoritative, mysterious, and cinematic.
+
+CAMERA STYLE:
+
+Use cinematic camera movement throughout.
+
+The camera may travel rapidly between locations when the narration describes the wider world.
+
+Use aerial establishing shots, sweeping landscape movements, long cinematic transitions, and controlled dramatic camera movements.
+
+When showing danger or evil, do not immediately reveal everything.
+
+Use distance, silhouettes, shadows, atmospheric haze, backlighting, and partially obscured figures to create mystery.
+
+---LOOP---
+
+Continue directly from the reference image.
+
+Begin with the exact image of young Link sleeping peacefully on the woven straw bedding inside the rustic dwelling.
+
+The camera slowly pushes toward the sleeping Link.
+
+As the camera enters the scene, the poster-like composition transforms into a fully immersive cinematic environment.
+
+The "THE LEGEND OF ZELDA — OCARINA OF TIME" logo, Master Sword, Hylian Shield, and all promotional graphics completely disappear.
+
+The camera moves closer to Link's peaceful sleeping face.
+
+His blonde hair, pointed ears, green tunic, and relaxed expression are clearly visible.
+
+The narrator begins:
+
+"Before anyone would call his name"
+
+Pause.
+
+"...a young hero slept, unaware of the destiny that awaited him"
+
+The camera slowly moves toward the window or entrance of the dwelling.
+
+The warm interior light remains behind us as the outside forest becomes visible.
+
+End with the camera looking outward from the dwelling toward the mysterious forest.
+
+No logo.
+
+No title text.
+
+No promotional graphics.
+
+Audio: deep forest ambience, subtle wind, soft room sounds, very low orchestral drone, powerful narrator.
+
+---LOOP---
+
+Continue directly from the exact final frame of the previous loop.
+
+Do NOT return immediately to Link.
+
+The camera leaves the dwelling and rapidly travels outward through Kokiri Forest.
+
+Begin with a sweeping cinematic movement through the enormous ancient trees.
+
+Show the forest from multiple rapidly connected perspectives:
+
+* towering trees disappearing into mist,
+* sunlight filtering through the canopy,
+* winding forest paths,
+* distant waterfalls and natural scenery,
+* the vast scale of the forest.
+
+The camera accelerates forward through the forest and emerges into the open world.
+
+Transition into a breathtaking aerial shot of Hyrule Field.
+
+Reveal the enormous green landscape stretching toward the horizon.
+
+Show distant mountains, roads, forests, and the distant silhouette of Hyrule Castle.
+
+The world should feel vast and peaceful, but there should be a subtle sense that something is wrong.
+
+The narrator continues:
+
+"But beyond the quiet forest..."
+
+Pause.
+
+"...the kingdom of Hyrule stretched beneath a sky that had yet to know fear."
+
+The camera continues flying rapidly across Hyrule Field toward the distant horizon.
+
+As the loop ends, the landscape gradually becomes drier and more barren.
+
+Transition naturally toward the desert.
+
+Audio: wind through the forest, growing atmospheric ambience, sweeping orchestral movement, narrator powerful and restrained.
+
+---LOOP---
+
+Continue directly from the exact final frame of the previous loop.
+
+The camera continues its rapid cinematic journey across the landscape.
+
+The green fields disappear behind us.
+
+The environment becomes increasingly dry and hostile.
+
+Move across vast rocky terrain and finally enter the Gerudo Desert.
+
+Show:
+
+* enormous sand dunes,
+* violent desert wind,
+* swirling dust,
+* distant rock formations,
+* a burning orange sunset,
+* dark clouds forming over the horizon.
+
+The camera gradually slows.
+
+The peaceful atmosphere is now completely gone.
+
+The camera approaches a massive ancient structure or fortress partially obscured by sand and darkness.
+
+Do NOT immediately reveal Ganondorf clearly.
+
+Instead, show subtle evidence of his presence.
+
+A large human-like silhouette stands in the distance.
+
+Only his outline is visible through blowing sand.
+
+His cape or clothing moves violently in the wind.
+
+His face remains hidden in shadow.
+
+The figure should feel enormous, powerful, and threatening.
+
+The narrator lowers his voice:
+
+"But beyond the fields..."
+
+Pause.
+
+"...something else was watching."
+
+The camera slowly pushes toward the silhouette.
+
+For a brief moment, a pair of intense eyes may become barely visible within the darkness.
+
+The narrator continues:
+
+"An ancient evil..."
+
+Pause.
+
+"...was beginning to stir."
+
+End with the mysterious silhouette standing alone against the desert sunset.
+
+Do NOT show a complete facial close-up of Ganondorf yet.
+
+Do NOT reveal his full identity explicitly through dialogue.
+
+The goal is to create anticipation.
+
+Audio: powerful desert wind, deep low-frequency rumble, distant thunder, dark orchestral texture, narrator becoming increasingly ominous.
+
+
+---LOOP---
+
+Continue directly from the exact final frame of the previous loop.
+
+The mysterious silhouette remains standing in the Gerudo Desert.
+
+The camera slowly moves closer through the blowing sand.
+
+The figure gradually becomes more recognizable.
+
+Reveal only partial details:
+
+* imposing physical presence,
+* long dark hair,
+* powerful silhouette,
+* distinctive clothing,
+* broad shoulders,
+* intimidating posture.
+
+Keep much of the face hidden by shadow.
+
+A brief flash of light reveals part of his face before darkness covers it again.
+
+The viewer should now understand that this is Ganondorf without needing a full reveal.
+
+The camera slowly moves past him.
+
+As it does, the vast desert stretches behind him toward the distant horizon.
+
+The narrator delivers the final line with maximum dramatic weight:
+
+"And somewhere beyond the kingdom..."
+
+Pause.
+
+"...Ganondorf was waiting."
+
+Hold on Ganondorf's shadowed silhouette.
+
+Then cut back toward the distant green horizon of Hyrule.
+
+The contrast between the peaceful kingdom and the emerging evil should be visually powerful.
+
+End on the ominous image of Ganondorf standing alone in the desert.
+
+No logo.
+
+No title text.
+
+No promotional graphics.
+
+Audio: deep cinematic bass, violent desert wind, restrained orchestral crescendo, then a brief moment of silence immediately after:
+
+"Ganondorf was waiting."
+
+The final frame should be suitable as the starting point for the next scene, where the story returns to Link.
+
+---
