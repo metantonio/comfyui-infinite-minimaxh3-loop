@@ -102,7 +102,7 @@ When executed, `loop.py` merges `GLOBAL` + `Scene Prompt` for each iteration.
 > [!NOTE]
 > **Windows Commands**: All command examples below are structured for **Windows** (PowerShell or Command Prompt / `cmd.exe`).
 > 
-> **Resolution Requirement**: If specifying custom `--width` and `--height`, dimensions **must be multiples of 32** (e.g. `864x480`, `1280x720`, `768x512`).
+> **Resolution Requirement**: If specifying custom `--width` and `--height`, dimensions **must be multiples of 32** (e.g. `864x480`, `1280x704`, `768x512`).
 
 ### Basic Command (PowerShell / Command Prompt)
 Run the automation loop starting with an initial seed image (`initial.jpg`):

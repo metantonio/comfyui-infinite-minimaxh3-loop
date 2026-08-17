@@ -1,7 +1,7 @@
 GLOBAL:
 Maintain exact character identities, faces, clothing, environment, and semi-realistic visual style from the opening frame across all loops.
-- Zelda: blonde hair, blue eyes, wearing white outfit.
-- Link: blonde hair, blue eyes, wearing green tunic.
+- Zelda: blonde hair, blue eyes, wearing blue outfit.
+- Link: blonde hair, blue eyes, wearing blue tunic.
 Each loop inherits the previous final frame pose, camera angle, and facial expressions.
 
 CAMERA RULES:

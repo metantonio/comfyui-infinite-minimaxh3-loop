@@ -67,4 +67,4 @@ python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --im
 python loop.py --workflow .\MiniMax_H3_Loop_API.json --prompt .\prompts.txt --image .\initial.jpg --check
 
 
-python loop_v2.py --workflow MiniMax_H3_Loop_API_v2.json --prompt prompts2.txt --image initial.jpg --width 864 --height 480
+python loop_v3.py --workflow MiniMax_H3_Loop_API_v3.json --prompt prompts2.txt --image initial.jpg --width 704 --height 864
